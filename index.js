@@ -2,7 +2,7 @@ const express = require("express");
 const router = express();
 const port = process.env.PORT || 3000;
 router.get("/", (req, res) => {
-  res.send("hello from app using azure !");
+  res.send(process.env);
 });
 
 router.listen(port, () => {
